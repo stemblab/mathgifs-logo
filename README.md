@@ -1,4 +1,1 @@
-mathgifs-logo
-=============
-
-See @mathgifs and http://mathgifs.blogspot.co.nz/2013/09/mathgifs-logo.html
+![](https://github.com/stemblab/mathgifs-logo/blob/gh-pages/thumb.png)
