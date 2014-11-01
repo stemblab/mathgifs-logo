@@ -7,10 +7,11 @@ c = -6/8
 
  # $f(x)=\left((x-a)^2+b^2-c^2\right)/(2(b-c))$
 
-f = (x, a, b, c) -> ((x-a).pow(2) + b*b - c*c)/(2*(b-c))
+f = (x, a, b, c) ->
+    ((x-a).pow(2) + b*b - c*c)/(2*(b-c))
 
 x = linspace -1, 1, 50
-y = (f(x, a, bs[i], c) for a, i in as) 
+y = (f(x, a, bs[i], c) for a, i in as) #; 
 
 fig = figure
     height: 400
@@ -38,7 +39,7 @@ snapshot = (n) ->
     return if n>y.length-1
     plot x, y[0..n], fig: fig
     setTimeout (-> snapshot n+1), delay
-setTimeout (-> snapshot 0), 2000  #; Delayed start (2s)
+setTimeout (-> snapshot 0), 2000 #; 2s delay
 
 
 
